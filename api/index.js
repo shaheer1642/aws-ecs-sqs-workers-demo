@@ -4,7 +4,7 @@ const { SQSClient, SendMessageCommand } = require("@aws-sdk/client-sqs");
 
 const app = express();
 const sqs = new SQSClient({
-    region: "ap-south-1",
+    region: "us-east-1",
     credentials: {
         accessKeyId: process.env.AWS_ACCESS_KEY_ID,
         secretAccessKey: process.env.AWS_ACCESS_SECRET_KEY
